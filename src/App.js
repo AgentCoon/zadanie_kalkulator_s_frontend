@@ -79,7 +79,7 @@ class App extends Component {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="dailyrate">Enter daily rate</label>
-                                <input value={this.state.dailyRate} onChange={this.handleDailyRateChange} type="number" className="form-control" name="amount" id="dailyrate" placeholder="e.g. 500" step="0.01" min="0" max="100000" required/>
+                                <input value={this.state.dailyRate} onChange={this.handleDailyRateChange} type="number" className="form-control" name="amount" id="dailyrate" placeholder="e.g. 500" step="0.01" min="0" required/>
                             </div>
                             <button type="submit" disabled={!this.state.valid} className="btn btn-primary" onClick={this.handleSubmit}>Calculate</button>
                         </form>
